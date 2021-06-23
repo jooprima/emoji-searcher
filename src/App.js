@@ -28,13 +28,13 @@ function App() {
     fetchEmojis();
   }, []);
 
-  console.log("loading ? ", loading);
-  console.log("error ? ", error);
-  console.log("emojiData ? ", emojiData);
-
   return (
     <div>
       <h1>Hello, world!</h1>
+
+      {loading && <p>Loading...</p>}
+      {error && <p>Ooopppss...</p>}
+      {emojiData.length > 0 && <p>Emojis Data Sukses!</p>}
     </div>
   );
 }
