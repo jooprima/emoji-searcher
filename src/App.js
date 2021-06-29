@@ -38,7 +38,7 @@ function App() {
       <Navbar />
 
       <Container>
-        <h1>Hello, world!</h1>
+        <h1>Pilih Aku !!!</h1>
 
         {loading && <Empty text="Loading..." />}
         {error && <Empty text="Error!" />}
